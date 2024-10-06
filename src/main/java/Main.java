@@ -3,12 +3,18 @@ import shapes.Circle;
 import shapes.CompoundShape;
 import shapes.Dot;
 import shapes.Rectangle;
+import shapes.factory.CircleFactory;
+import shapes.factory.DotFactory;
+import shapes.factory.RectangleFactory;
+import shapes.factory.ShapeFactory;
+import shapes.Shape;
 
 import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
         ImageEditor editor = new ImageEditor();
+
 
         editor.loadShapes(
                 new Circle(10, 10, 10, Color.BLUE),
